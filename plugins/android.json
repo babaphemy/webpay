@@ -1,0 +1,24 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "com.interswitchng.sdk.payment": {
+            "CLIENT_ID": "IKIA94F3CEE2AF5E3352E15E77FD4279D457D98575D3",
+            "CLIENT_SECRET": "qEqm2Q/eccL7ZWFKHRA2WSWspTQkYr74oBUnkjaWIsA=",
+            "PACKAGE_NAME": "net.myeverlasting.webpay"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "net.myeverlasting.webpay"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-add-swift-support": {
+            "PACKAGE_NAME": "net.myeverlasting.webpay"
+        }
+    }
+}

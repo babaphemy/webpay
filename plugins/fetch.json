@@ -1,0 +1,31 @@
+{
+    "com.interswitchng.sdk.payment": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/techquest/cordova-payment-plugin.git",
+            "subdir": "."
+        },
+        "is_top_level": true,
+        "variables": {
+            "CLIENT_ID": "IKIA94F3CEE2AF5E3352E15E77FD4279D457D98575D3",
+            "CLIENT_SECRET": "qEqm2Q/eccL7ZWFKHRA2WSWspTQkYr74oBUnkjaWIsA="
+        }
+    },
+    "cordova-plugin-add-swift-support": {
+        "source": {
+            "type": "git",
+            "url": "https://github.com/akofman/cordova-plugin-add-swift-support",
+            "subdir": "."
+        },
+        "is_top_level": false,
+        "variables": {}
+    },
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-whitelist@1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}

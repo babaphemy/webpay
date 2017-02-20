@@ -1,0 +1,67 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {
+            "res/xml/config.xml": {
+                "parents": {
+                    "/*": [
+                        {
+                            "xml": "<feature name=\"PaymentPlugin\"><param name=\"android-package\" value=\"PaymentPlugin\" /></feature>",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<feature name=\"Whitelist\"><param name=\"android-package\" value=\"org.apache.cordova.whitelist.WhitelistPlugin\" /><param name=\"onload\" value=\"true\" /></feature>",
+                            "count": 1
+                        }
+                    ]
+                }
+            },
+            "AndroidManifest.xml": {
+                "parents": {
+                    "/manifest/application": [
+                        {
+                            "xml": "<meta-data android:name=\"clientId\" android:value=\"IKIA94F3CEE2AF5E3352E15E77FD4279D457D98575D3\" />",
+                            "count": 1
+                        },
+                        {
+                            "xml": "<meta-data android:name=\"clientSecret\" android:value=\"qEqm2Q/eccL7ZWFKHRA2WSWspTQkYr74oBUnkjaWIsA=\" />",
+                            "count": 1
+                        }
+                    ]
+                }
+            }
+        }
+    },
+    "installed_plugins": {
+        "cordova-plugin-add-swift-support": {
+            "PACKAGE_NAME": "net.myeverlasting.webpay"
+        },
+        "com.interswitchng.sdk.payment": {
+            "CLIENT_ID": "IKIA94F3CEE2AF5E3352E15E77FD4279D457D98575D3",
+            "CLIENT_SECRET": "qEqm2Q/eccL7ZWFKHRA2WSWspTQkYr74oBUnkjaWIsA=",
+            "PACKAGE_NAME": "net.myeverlasting.webpay"
+        },
+        "cordova-plugin-whitelist": {
+            "PACKAGE_NAME": "net.myeverlasting.webpay"
+        }
+    },
+    "dependent_plugins": {},
+    "modules": [
+        {
+            "id": "com.interswitchng.sdk.payment.PaymentPlugin",
+            "file": "plugins/com.interswitchng.sdk.payment/www/PaymentPlugin.js",
+            "pluginId": "com.interswitchng.sdk.payment",
+            "clobbers": [
+                "PaymentPlugin"
+            ]
+        }
+    ],
+    "plugin_metadata": {
+        "cordova-plugin-add-swift-support": "1.6.2",
+        "com.interswitchng.sdk.payment": "0.0.1",
+        "cordova-plugin-whitelist": "1.3.1"
+    }
+}
