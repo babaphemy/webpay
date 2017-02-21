@@ -8,17 +8,17 @@
     },
     "installed_plugins": {
         "com.interswitchng.sdk.payment": {
-            "CLIENT_ID": "IKIA94F3CEE2AF5E3352E15E77FD4279D457D98575D3",
-            "CLIENT_SECRET": "qEqm2Q/eccL7ZWFKHRA2WSWspTQkYr74oBUnkjaWIsA=",
-            "PACKAGE_NAME": "net.myeverlasting.webpay"
+            "CLIENT_ID": "IKIA9614B82064D632E9B6418DF358A6A4AEA84D7218",
+            "CLIENT_SECRET": "XCTiBtLy1G9chAnyg0z3BcaFK4cVpwDg/GTw2EmjTZ8=",
+            "PACKAGE_NAME": "net.myeverlasting.demopay"
         },
         "cordova-plugin-whitelist": {
-            "PACKAGE_NAME": "net.myeverlasting.webpay"
+            "PACKAGE_NAME": "net.myeverlasting.demopay"
         }
     },
     "dependent_plugins": {
         "cordova-plugin-add-swift-support": {
-            "PACKAGE_NAME": "net.myeverlasting.webpay"
+            "PACKAGE_NAME": "net.myeverlasting.demopay"
         }
     }
 }

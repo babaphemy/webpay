@@ -1,42 +1,38 @@
+<h1>Test Webpay</h1>
+
+
 <ion-view class="signup-view auth-view" >
 
     <ion-content scroll="false">
         <div class="row">
             <div class="col col-center">
                 <div class="card sign-up-container">
-                    <form name="signup_form" class="" novalidate>
+                    <form name="form">
                         <div class="item item-body">
                             <label class="item item-input">
-                                <input type="email" placeholder="Email" name="user_email" ng-model="user.email" required>
+                                <input type="email" placeholder="Email" name="form-customerid" id="form-customerid">
                             </label>
                             <label class="item item-input" show-hide-container>
-                                <input type="password" placeholder="Password" name="user_password" ng-model="user.password" required show-hide-input>
+                                <input type="number" placeholder="Amount to pay" name="form-amount"  id="form-amount">
                             </label>
                             <label class="item item-input" >
-                                <input type="text" placeholder="Full Name" name="user_fullname" ng-model="user.fullname" required >
+                                <input type="text" placeholder="Full Name" name="user_fullname" >
                             </label>
                             <label class="item item-input" >
-                                <input type="text" placeholder="Address" name="user_address" ng-model="user.address" required >
+                                <input type="text" placeholder="Address" name="user_address"  >
                             </label>
                             <label class="item item-input" >
-                                <input type="text" placeholder="Mobile" name="user_fullname" ng-model="user.mobile" required >
-                            </label>
-                            <label class="item item-input" >
-                                <input type="number" placeholder="amount" name="user_amount" ng-model="user.amout" required >
+                                <input type="text" placeholder="Mobile" name="user_fullname" >
                             </label>
                         </div>
                         <div class="item item-body bottom-content">
-                            <button type="submit" class="button button-assertive button-block" ng-click="doSignUp()" ng-disabled="signup_form.$invalid">
-                                Sign Up
+                            <button type="submit" class="button button-assertive button-block" id="sendPayment" name="sendPayment">
+                                Pay Up
                             </button>
                         </div>
                     </form>
                 </div>
-                <div class="alternative-actions">
-                    <a class="log-in button button-small button-clear button-light" ui-sref="auth.login">
-                        Log In
-                    </a>
-                </div>
+
             </div>
         </div>
     </ion-content>

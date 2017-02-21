@@ -1,5 +1,5 @@
 <?xml version='1.0' encoding='utf-8'?>
-<manifest android:hardwareAccelerated="true" android:versionCode="10000" android:versionName="1.0.0" package="net.myeverlasting.webpay" xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest android:hardwareAccelerated="true" android:versionCode="10000" android:versionName="1.0.0" package="net.myeverlasting.demopay" xmlns:android="http://schemas.android.com/apk/res/android">
     <supports-screens android:anyDensity="true" android:largeScreens="true" android:normalScreens="true" android:resizeable="true" android:smallScreens="true" android:xlargeScreens="true" />
     <uses-permission android:name="android.permission.INTERNET" />
     <application android:hardwareAccelerated="true" android:icon="@mipmap/icon" android:label="@string/app_name" android:supportsRtl="true">
@@ -9,8 +9,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <meta-data android:name="clientId" android:value="IKIA94F3CEE2AF5E3352E15E77FD4279D457D98575D3" />
-        <meta-data android:name="clientSecret" android:value="qEqm2Q/eccL7ZWFKHRA2WSWspTQkYr74oBUnkjaWIsA=" />
+        <meta-data android:name="clientId" android:value="IKIA9614B82064D632E9B6418DF358A6A4AEA84D7218" />
+        <meta-data android:name="clientSecret" android:value="XCTiBtLy1G9chAnyg0z3BcaFK4cVpwDg/GTw2EmjTZ8=" />
     </application>
     <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="25" />
 </manifest>
