@@ -7,6 +7,7 @@
 var helloApp = angular.module("HelloApp", []);
 helloApp.controller("HelloCtrl", [ '$scope', function($scope) {
     $scope.name = "Calvin Hobbes";
+    $scope.pay = {};
     document.addEventListener("deviceready", init, false);
 
     function init(){
@@ -41,6 +42,9 @@ helloApp.controller("HelloCtrl", [ '$scope', function($scope) {
 
     $scope.doPay = function(){
         console.log('hello am here');
+        $scope.pay.customerId = makeid();
+        $scope.pay.currency = "NGN";
+
         var payWithCardSuccess = function(response) {
             var purchaseResponse = JSON.parse(response); // transaction success reponse
             alert(purchaseResponse.message);
@@ -48,7 +52,7 @@ helloApp.controller("HelloCtrl", [ '$scope', function($scope) {
         var payWithCardFail = function(response) {
             alert(response); // transaction failure reponse
         }
-        PaymentPlugin.payWithCard(payWithCardRequest, payWithCardSuccess, payWithCardFail);
+        PaymentPlugin.payWithCard($scope.pay, payWithCardSuccess, payWithCardFail);
     };
 
 
